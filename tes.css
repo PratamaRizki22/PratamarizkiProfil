@@ -1,0 +1,160 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  /* border: 1px solid blue; */
+}
+body {
+  font-family: Segoe UI;
+  background-color: #202023;
+  color: #fffff3;
+}
+.article-content {
+  margin-left: 10px;
+}
+#content {
+  width: 100%;
+  display: inline-block;
+  margin: 2px auto;
+}
+article .article {
+  width: 100%;
+  /* text-align: center; */
+}
+
+a {
+  color: #fffff3;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  cursor: pointer;
+  /* border: 1px solid white; */
+}
+nav {
+  background-color: #50c1b4;
+  display: flex;
+  position: fixed;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  margin-left: auto;
+}
+nav ul li {
+  position: static;
+  display: inline-block;
+  list-style: none;
+  margin: 2px 20px;
+  align-items: center;
+}
+#content-image {
+  border-radius: 100%;
+  display: flex;
+  margin: 20px auto;
+}
+.title {
+  border-bottom: 2px solid #9a9a9a;
+}
+/* footer */
+
+footer {
+  background-color: #50c1b4;
+  height: 130px;
+}
+
+/* aside */
+
+.tujuan {
+  width: 100px;
+}
+
+.footer-sosmed {
+  display: flex;
+  margin: 10px auto;
+  justify-content: center;
+}
+
+.sosmed {
+  text-align: center;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.end {
+  text-align: center;
+}
+.copyright {
+  color: #313134;
+  display: flex;
+  margin: 20px;
+  font-style: italic;
+}
+
+@media screen and (max-width: 612px) {
+  /* test hamburger */
+  .hamburger {
+    margin-top: -10px;
+    position: fixed;
+    z-index: 100;
+    top: 1rem;
+    right: 1rem;
+    padding: 4px;
+    border: black solid 1px;
+    border-radius: 20px;
+    padding: 2px 6px;
+    background: #202023;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+  }
+  .closeIcon {
+    display: none;
+  }
+  .menu {
+    position: fixed;
+    transform: translateY(-100%);
+    transition: transform 0.2s;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 99;
+    background-color: black;
+    color: white;
+    list-style: none;
+    padding-top: 4rem;
+  }
+  .showMenu {
+    transform: translateY(0);
+  }
+  .article-content {
+    margin-left: 0px;
+  }
+  aside {
+    margin-right: 0px;
+    margin: 2px auto;
+    text-align: center;
+    margin-left: 0;
+    width: 100%;
+    margin-top: 40px;
+    align-items: center;
+    align-self: center;
+  }
+  main {
+    text-align: center;
+    padding-top: 60px;
+  }
+  #content {
+    text-align: center;
+    width: 100%;
+  }
+  footer {
+    display: inline-block;
+    width: 100%;
+  }
+}
+@media screen and (min-width: 612px) {
+  .hamburger {
+    display: none;
+  }
+}
